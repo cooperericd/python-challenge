@@ -19,10 +19,7 @@ with open(budget_csv, newline='') as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter=',')
 
-    print(csvreader)
-
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
 
     for row in csvreader:
         total_months = total_months + 1
